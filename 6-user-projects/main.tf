@@ -7,7 +7,8 @@ resource "rancher2_user" "user" {
   count            = var.number-of-users
   name = "${var.user-name-prefix}-${count.index}"
   username = "${var.user-name-prefix}-${count.index}"
-  password = random_password.password.result
+  #password = random_password.password.result
+  password = var.password
   enabled = true
 }
 
@@ -39,3 +40,10 @@ resource "rancher2_project_role_template_binding" "project-binding" {
   role_template_id = "project-owner"
   user_id = rancher2_user.user[count.index].id
 }
+
+resource "rancher2_namespace" "namespace" {
+  count            = var.number-of-users
+  name = "${var.user-name-prefix}-${count.index}"
+  project_id = rancher2_project.project[count.index].id
+}
+

@@ -15,3 +15,4 @@ variable "rancher_insecure" {
 
 variable "user-name-prefix" {}
 variable "number-of-users" {}
+variable "password" {}

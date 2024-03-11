@@ -1,3 +1,4 @@
 rancher_insecure="true"
 number-of-users="20"
 user-name-prefix="cfl-user"
+password="Suse12345678!!"
