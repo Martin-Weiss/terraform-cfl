@@ -1,0 +1,12 @@
+project_name = "DEMO"
+plan         = "m3.small.x86" # $0.11
+#plan         = "c2.medium.x86" # $0.50
+#plan         = "c3.medium.x86" # $0.36
+max_bid_price = "0.11"
+metro         = "FR"
+spot_instance = true
+ssh_key       = "ssh-rsa xxxx root@server"
+ipxe_script   = "https://raw.githubusercontent.com/martin-weiss/terraform-harvester-equinix/main/ipxe/ipxe-"
+hostname_prefix = demo
+node_count = 3
+num_of_vlans = 4

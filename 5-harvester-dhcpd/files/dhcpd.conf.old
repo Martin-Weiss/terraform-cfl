@@ -1,0 +1,92 @@
+ping-check on;
+ddns-update-style none;
+authoritative;
+
+option domain-name "suse";
+option domain-name-servers 8.8.8.8;
+default-lease-time 86400;
+max-lease-time 86400;
+option subnet-mask 255.255.255.0;
+
+subnet 10.0.2.0 netmask 255.255.255.0 {}
+
+subnet 10.1.1.0 netmask 255.255.255.0 {
+  range 10.1.1.11 10.1.1.250;
+  option routers 10.1.1.1;
+}
+subnet 10.2.1.0 netmask 255.255.255.0 {
+  range 10.2.1.11 10.2.1.250;
+  option routers 10.2.1.1;
+}
+subnet 10.3.1.0 netmask 255.255.255.0 {
+  range 10.3.1.11 10.3.1.250;
+  option routers 10.3.1.1;
+}
+subnet 10.4.1.0 netmask 255.255.255.0 {
+  range 10.4.1.11 10.4.1.250;
+  option routers 10.4.1.1;
+}
+subnet 10.5.1.0 netmask 255.255.255.0 {
+  range 10.5.1.11 10.5.1.250;
+  option routers 10.5.1.1;
+}
+subnet 10.6.1.0 netmask 255.255.255.0 {
+  range 10.6.1.11 10.6.1.250;
+  option routers 10.6.1.1;
+}
+subnet 10.7.1.0 netmask 255.255.255.0 {
+  range 10.7.1.11 10.7.1.250;
+  option routers 10.7.1.1;
+}
+subnet 10.8.1.0 netmask 255.255.255.0 {
+  range 10.8.1.11 10.8.1.250;
+  option routers 10.8.1.1;
+}
+subnet 10.9.1.0 netmask 255.255.255.0 {
+  range 10.9.1.11 10.9.1.250;
+  option routers 10.9.1.1;
+}
+subnet 10.10.1.0 netmask 255.255.255.0 {
+  range 10.10.1.11 10.10.1.250;
+  option routers 10.10.1.1;
+}
+subnet 10.11.1.0 netmask 255.255.255.0 {
+  range 10.11.1.11 10.11.1.250;
+  option routers 10.11.1.1;
+}
+subnet 10.12.1.0 netmask 255.255.255.0 {
+  range 10.12.1.11 10.12.1.250;
+  option routers 10.12.1.1;
+}
+subnet 10.13.1.0 netmask 255.255.255.0 {
+  range 10.13.1.11 10.13.1.250;
+  option routers 10.13.1.1;
+}
+subnet 10.14.1.0 netmask 255.255.255.0 {
+  range 10.14.1.11 10.14.1.250;
+  option routers 10.14.1.1;
+}
+subnet 10.15.1.0 netmask 255.255.255.0 {
+  range 10.15.1.11 10.15.1.250;
+  option routers 10.15.1.1;
+}
+subnet 10.16.1.0 netmask 255.255.255.0 {
+  range 10.16.1.11 10.16.1.250;
+  option routers 10.16.1.1;
+}
+subnet 10.17.1.0 netmask 255.255.255.0 {
+  range 10.17.1.11 10.17.1.250;
+  option routers 10.17.1.1;
+}
+subnet 10.18.1.0 netmask 255.255.255.0 {
+  range 10.18.1.11 10.18.1.250;
+  option routers 10.18.1.1;
+}
+subnet 10.19.1.0 netmask 255.255.255.0 {
+  range 10.19.1.11 10.19.1.250;
+  option routers 10.19.1.1;
+}
+subnet 10.20.1.0 netmask 255.255.255.0 {
+  range 10.20.1.11 10.20.1.250;
+  option routers 10.20.1.1;
+}

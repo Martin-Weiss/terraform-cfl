@@ -1,0 +1,2 @@
+https://raw.githubusercontent.com/harvester/experimental-addons/main/rancher-vcluster/rancher-vcluster.yaml
+- split into two manifests for terraform kubernetes_manifest
