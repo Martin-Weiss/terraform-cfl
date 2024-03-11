@@ -130,7 +130,7 @@ extract_ca_crt_from_secret
 get_user_token_from_secret
 set_kube_config_values
 echo "########## cloud config ############"
-cat ${KUBECFG_FILE_NAME}
+cat ${KUBECFG_FILE_NAME}; cat ${KUBECFG_FILE_NAME} > csi-kubeconfig
 echo
 echo "########## cloud-init user data ############"
 if [[ $OSTYPE == 'darwin'* ]]; then
