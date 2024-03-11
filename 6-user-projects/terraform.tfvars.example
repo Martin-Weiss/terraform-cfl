@@ -1,5 +1,3 @@
-rancher_api_url="https://rancher.10.10.10.10.nip.io/v3"
-rancher_baerer_token="token-abcde:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 rancher_insecure="true"
 number-of-users="20"
 user-name-prefix="cfl-user"

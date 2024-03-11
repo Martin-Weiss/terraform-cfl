@@ -12,10 +12,17 @@ resource "rancher2_user" "user" {
 }
 
 # user-base is required to allow creation of API tokens
-resource "rancher2_global_role_binding" "global-binding" {
+resource "rancher2_global_role_binding" "global-binding-user" {
   count            = var.number-of-users
-  name = "${var.user-name-prefix}-${count.index}-global-binding"
+  name = "${var.user-name-prefix}-${count.index}-global-binding-user"
   global_role_id = "user-base"
+  user_id = rancher2_user.user[count.index].id
+}
+
+resource "rancher2_global_role_binding" "global-binding-clusters-create" {
+  count            = var.number-of-users
+  name = "${var.user-name-prefix}-${count.index}-global-binding-clusters-create"
+  global_role_id = "clusters-create"
   user_id = rancher2_user.user[count.index].id
 }
 

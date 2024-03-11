@@ -8,5 +8,5 @@ terraform {
 }
 
 provider "equinix" {
-  auth_token = file("${path.cwd}/files/.metal_auth_token")
+  auth_token = file("${path.cwd}/../.metal_auth_token")
 }

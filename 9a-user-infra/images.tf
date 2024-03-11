@@ -1,6 +1,6 @@
-resource "harvester_image" "sles15sp5-default" {
+resource "harvester_image" "sles" {
   name      = var.image
-  namespace = "default"
+  namespace = var.namespace
 
   display_name = var.image
   source_type  = "download"
