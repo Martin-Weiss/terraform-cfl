@@ -7,5 +7,5 @@ terraform.tfstate.backup
 terraform.tfvars
 csi-kubeconfig
 .rancher_api_url
-.rancher_baerer_token
+.rancher_bearer_token
 .metal_auth_token

@@ -3,7 +3,7 @@ variable "rancher_api_url" {
   description = "Rancher API endpoint to manager your Harvester cluster"
 }
 
-variable "rancher_baerer_token" {
+variable "rancher_bearer_token" {
   default     = ""
   description = "Rancher Bearer Token"
 }

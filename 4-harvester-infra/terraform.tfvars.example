@@ -1,1 +1,3 @@
-num_of_vlans=4
+num_of_vlans="4"
+image="sles15sp5-default"
+image_url="https://download.opensuse.org/repositories/home:/mweiss2:/branches:/SUSE:/Templates:/Images:/SLE-15-SP5/images/SLES15-SP5-Minimal-VM.x86_64-Cloud-Build5.2.qcow2"

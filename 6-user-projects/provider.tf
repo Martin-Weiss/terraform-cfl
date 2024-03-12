@@ -9,7 +9,7 @@ terraform {
 
 provider "rancher2" {
   api_url    = file("${path.cwd}/../.rancher_api_url")
-  token_key  = file("${path.cwd}/../.rancher_baerer_token")
+  token_key  = file("${path.cwd}/../.rancher_bearer_token")
   insecure   = var.rancher_insecure
 }
 
