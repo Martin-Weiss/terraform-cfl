@@ -1,14 +1,14 @@
 Open Points:
 ----------------------
-- fix kubeconfig for user in harvester csi problem (proxy access for harvester CSI/CPI)
-- create some slides
-- create hands on guide
-- add further automation
-- add registry proxy
-- application with load balancer
-- Windows Machine Image?
-- harvester CPI can not use proxy - so can not use rancher kubeconfig in CPI/CSI
+- fix registry proxy caching images
+- fix kubeconfig for user in harvester csi problem (proxy access for harvester CSI/CPI) - need engineering help, here
   -> why can't a downstream cluster not reach the rancher-vcluster? (Just via proxy)?
+- file tune slides
+- file tune attendee and instructur guide
+- add further automation
+- application with load balancer
+- Add Windows Machine Image?
+- Open issue: harvester CPI can not use proxy - so can not use rancher kubeconfig in CPI/CSI
 
 Instructure Preparation
 -----------------------
