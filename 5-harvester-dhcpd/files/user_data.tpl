@@ -30,7 +30,7 @@ write_files:
     version: 0.1
     storage:
       filesystem:
-        rootdirectory: /var/lib/registry
+        rootdirectory: /var/lib/docker-registry
     proxy:
       #remoteurl: https://index.docker.io/v1
       remoteurl: https://registry-1.docker.io
@@ -95,9 +95,9 @@ runcmd:
   - chmod 644 /data/certificates/10.0.2.2.key
   - openssl req -new -nodes -subj "/C=DE/ST=BW/O=SUSE/CN=10.0.2.2" -sha256 -key /data/certificates/10.0.2.2.key -out /data/certificates/10.0.2.2.csr -config /data/certificates/req.conf
   - openssl x509 -req -in /data/certificates/10.0.2.2.csr -CA /data/certificates/rootca.crt -CAkey /data/certificates/rootca.key -CAcreateserial -out /data/certificates/10.0.2.2.crt -days 3650 -sha256 -extfile /data/certificates/req.conf -extensions v3_req
-  - mkdir -p /data/registry/data
+  - mkdir -p /data/registry/docker-registry
   - chmod 777 /data/registry/data
-  - podman run -d --restart=always --name registry -v /data/registry/config.yml:/etc/docker/registry/config.yml -v /data/registry/data:/var/lib/registry -v /data/certificates:/certificates:ro -v /data/certificates/rootca.crt:/etc/ssl/certs/ca-certificates.crt:ro -e REGISTRY_HTTP_TLS_CERTIFICATE=/certificates/10.0.2.2.crt -e REGISTRY_HTTP_TLS_KEY=/certificates/10.0.2.2.key -e REGISTRY_HTTP_SECRET="registry1234!" -p 5000:5000 registry.suse.com/suse/registry:2.8-19.2
+  - podman run -d --restart=always --name registry -v /data/registry/config.yml:/etc/docker/registry/config.yml -v /data/registry/docker-registry:/var/lib/docker-registry -v /data/certificates:/certificates:ro -v /data/certificates/rootca.crt:/etc/ssl/certs/ca-certificates.crt:ro -e REGISTRY_HTTP_TLS_CERTIFICATE=/certificates/10.0.2.2.crt -e REGISTRY_HTTP_TLS_KEY=/certificates/10.0.2.2.key -e REGISTRY_HTTP_SECRET="registry1234!" -p 5000:5000 registry.suse.com/suse/registry:2.8-19.2
   - podman generate systemd --restart-policy=always registry -n > /etc/systemd/system/container-registry.service
   - systemctl daemon-reload
   - systemctl enable --now container-registry.service
