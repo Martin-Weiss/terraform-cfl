@@ -147,6 +147,17 @@ resource "rancher2_cluster_v2" "cluster" {
 
   rke_config {
 
+    registries {
+         configs {
+           hostname = "10.0.2.2:5000"
+           insecure = true
+      }
+         mirrors {
+           endpoints = ["https://10.0.2.2:5000"]
+           hostname = "docker.io"
+      }
+    }
+
     machine_pools {
 
         name = "master"
