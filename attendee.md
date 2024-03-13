@@ -59,10 +59,6 @@ vi terraform.tfvars
 - adjust rancher_bearer_token
 - adjust namespace (should be identical to your user)
 - adjust cluster name (use the same name as your username)
-- get harvester cluster ID from Rancher UI and add this in harvester_cluster_id= variable
-(access the cluster in virtualization and check the ID in the URL)
-i.e. https://rancher.145.40.94.20.nip.io/dashboard/harvester/c/c-m-qqtvv7bb/harvesterhci.io.dashboard#vm
-	-> in this example it is c-m-qqtvv7bb but in your lab this is different!
 - adjust the VLAN to the one you want to use (vlan-1000, vlan-1001, vlan-1002 or vlan-1003)
 
 create csi-kubeconfig via the following command:

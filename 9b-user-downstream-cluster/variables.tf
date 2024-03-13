@@ -24,4 +24,3 @@ variable "clustername" {
 
 variable "vlan" {}
 variable "ssh_user" {}
-variable "harvester_cluster_id" {}

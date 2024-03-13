@@ -148,9 +148,10 @@ cd ../8-downstream-cluster
 cp terraform.tfvars.example terraform.tfvars
 
 vi terraform.tfvars
-- adjust harvester_cluster_id (get this from the Rancher UI when clicking on the harvester cluster
-i.e. "c-m-qqtvv7bb" in the following URL you see:
-https://rancher.145.40.94.20.nip.io/dashboard/harvester/c/c-m-qqtvv7bb/harvesterhci.io.dashboard#vm-metric
+- namespace
+- image
+- clustername
+- vlan
 
 Run the following to create a csi-kubeconfig:
 bash create-csi-kubeconfig.sh

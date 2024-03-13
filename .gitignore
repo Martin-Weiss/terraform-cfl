@@ -1,11 +1,12 @@
+.metal_auth_token
+.rancher_api_url
+.rancher_bearer_token
 harvester-kubeconfig
 harvester-rke2.yaml
 .terraform
+.terraform.lock.hcl
 terraform.tfstate
 terraform.tfstate.backup
-.terraform.lock.hcl
+.terraform.tfstate.lock.info
 terraform.tfvars
 csi-kubeconfig
-.rancher_api_url
-.rancher_bearer_token
-.metal_auth_token
