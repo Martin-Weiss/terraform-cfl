@@ -1,3 +1,4 @@
+.DS_Store
 .metal_auth_token
 .rancher_api_url
 .rancher_bearer_token
