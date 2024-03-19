@@ -12,5 +12,4 @@ install:
   device: /dev/sda
   iso_url: https://releases.rancher.com/harvester/${version}/harvester-${version}-amd64.iso
   tty: ttyS1,115200n8
-  device: /dev/sda
   data_disk: /dev/sdb

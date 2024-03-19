@@ -13,7 +13,6 @@ install:
   tty: ttyS1,115200n8
   vip: ${vip}
   vip_mode: static
-  device: /dev/sda
   data_disk: /dev/sdb
   addons:
     rancher_monitoring:
