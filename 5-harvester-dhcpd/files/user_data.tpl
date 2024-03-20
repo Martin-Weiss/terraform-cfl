@@ -76,6 +76,8 @@ packages:
 - squid
 - podman
 runcmd:
+  - zypper ar https://updates.suse.com/SUSE/Products/SLE-BCI/15-SP5/x86_64/product/ SLE-BCI
+  - zypper -n in dhcp-server squid podman 
   - - systemctl
     - enable
     - '--now'
