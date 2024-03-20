@@ -75,6 +75,8 @@ if [ -e /etc/cloud/cloud.cfg ]; then
     systemctl enable cloud-init
     systemctl enable cloud-config
     systemctl enable cloud-final
+    # workaround for bug 1221719
+    sed -i 's/^  distro:.*/  distro: sles/g' /etc/cloud/cloud.cfg
 fi
 
 # Enable jeos-firstboot
