@@ -1,9 +1,14 @@
 Open Points:
 ----------------------
 - fix registry proxy caching images
+
+https://github.com/harvester/harvester/issues/3960
 - fix kubeconfig for user in harvester csi problem (proxy access for harvester CSI/CPI) - need engineering help, here
   -> why can't a downstream cluster not reach the rancher-vcluster? (Just via proxy)?
 - Open issue: harvester CPI can not use proxy - so can not use rancher kubeconfig in CPI/CSI
+-> workaround "sysctl -w net.bridge.bridge-nf-call-iptables=0" on all Harvester nodes?
+
+
 - fine tune slides
 - fine tune attendee and instructur guide
 - add further automation
