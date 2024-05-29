@@ -1,0 +1,4 @@
+Based on https://turtles.docs.rancher.com/getting-started/install-rancher-turtles/using_rancher_dashboard
+
+get kubeconfig for the rancher local cluster via rancher UI as ../rancher-kubeconfig
+

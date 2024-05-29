@@ -1,0 +1,4 @@
+providers:
+  - name: "harvester"
+    url: "https://github.com/rancher-sandbox/cluster-api-provider-harvester/releases/latest/components.yaml"
+    type: "InfrastructureProvider"
