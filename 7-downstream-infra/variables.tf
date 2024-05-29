@@ -21,3 +21,6 @@ variable "image_url" {
 
 variable "namespace" {
 }
+
+variable "suse-ssh-key" {
+}
