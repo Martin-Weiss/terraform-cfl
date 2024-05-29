@@ -96,7 +96,6 @@ Manual Steps at this Stage (automation is an open todo ;-))
 - Copy Kubeconfig to Clipboard and save it to ../harvester-kubeconfig
 - Copy Registration URL i.e. https://rancher.145.40.94.20.nip.io/v3/import/blgspbdlt5dq6cllj9ph8hv6fcnvl9d7rq67xlm6b7kbnv9bglt8d4_c-m-qqtvv7bb.yaml
 
-`echo -n '<rancher_api_url>' > ../.rancher_api_url`
 `echo -n '<rancher_bearer_token>' > ../.rancher_bearer_token`
 
 - Login to Harvester as admin i.e. https://145.40.94.20/ with password "Suse12345678!!"

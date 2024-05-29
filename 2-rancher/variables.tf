@@ -1,2 +1,2 @@
-variable harvester_vip {}
+#variable harvester_vip {}
 variable rancher_password {}

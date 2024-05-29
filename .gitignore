@@ -11,3 +11,5 @@ terraform.tfstate.backup
 .terraform.tfstate.lock.info
 terraform.tfvars
 csi-kubeconfig
+price.json
+.harvester_vip
